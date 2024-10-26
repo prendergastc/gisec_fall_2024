@@ -7,9 +7,9 @@ import sites from "./data/sites.json";
 import neighborhoods from "./data/neighborhoods-with-count.json";
 
 
-// Get bounding box for sites and log to console.
-// import { bbox } from "@turf/turf";
+// Temp code to get bounding box for sites and log to console.
 
+// import { bbox } from "@turf/turf";
 // const sitesBbox = bbox(sites);
 // console.log(sitesBbox);
 
@@ -21,12 +21,7 @@ onMounted(() => {
   const map = new mapboxgl.Map({
     "container": mapContainer.value,
     "style": style,
-    "bounds": [
-      -118.6,
-      33.8,
-      -118.1,
-      34.3
-    ],
+    "bounds": [-118.65226, 33.70555313153153, -118.15570589019399, 34.333050872231304],
     "fitBoundsOptions": {
       "padding": 25,
       "pitch": 45
